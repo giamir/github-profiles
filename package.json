@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaellennox/github-profiles.git"
+    "url": "git+https://github.com/giamir/github-profiles.git"
   },
-  "author": "michaellennox",
+  "author": "giamir",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaellennox/github-profiles/issues"
+    "url": "https://github.com/giamir/github-profiles/issues"
   },
-  "homepage": "https://github.com/michaellennox/github-profiles#readme",
+  "homepage": "https://github.com/giamir/github-profiles#readme",
   "devDependencies": {
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
