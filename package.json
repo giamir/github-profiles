@@ -2,9 +2,9 @@
   "name": "github-profiles",
   "version": "1.0.0",
   "description": "Angular profiles for Github",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "karma start test/karma.conf.js",
     "e2e": "protractor test/e2e/conf.js"
   },
