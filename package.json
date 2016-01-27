@@ -7,7 +7,7 @@
     "start": "node app.js",
     "test": "karma start test/karma.conf.js",
     "e2e": "protractor test/e2e/conf.js",
-    "postinstall" : "./node_modules/bower/bin/bower install"
+    "postinstall": "bower cache clean && bower install"
   },
   "repository": {
     "type": "git",
