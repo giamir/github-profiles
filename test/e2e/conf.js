@@ -10,6 +10,10 @@ exports.config = {
   },
 
   onPrepare: function() {
+    require('protractor-http-mock').config = {
+      rootDirectory: __dirname, // default value: process.cwd()
+      protractorConfig: 'conf.js' // default value: 'protractor.conf'
+    };
     var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.TerminalReporter({
       verbosity: 3,

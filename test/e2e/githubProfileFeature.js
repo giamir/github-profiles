@@ -1,4 +1,13 @@
+var mock = require('protractor-http-mock');
+
 describe('GitHub profile finder', function() {
+
+  beforeEach(function() {
+    mock(['githubUserSearch.js']);
+  });
+  afterEach(function(){
+    mock.teardown();
+  });
 
   var searchBox = element(by.model('searchCtrl.searchTerm'));
   var searchButton = element(by.className('btn'));
@@ -15,7 +24,6 @@ describe('GitHub profile finder', function() {
     searchBox.sendKeys('giami');
     searchButton.click();
     var profiles = element.all(by.repeater('user in searchCtrl.searchResult.items'));
-    // browser.pause();
     expect(profiles.getText()).toContain('giamir');
   });
 

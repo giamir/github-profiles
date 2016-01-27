@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "karma start test/karma.conf.js",
-    "e2e" : "protractor test/e2e/conf.js"
+    "e2e": "protractor test/e2e/conf.js"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,11 @@
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.3",
     "karma-spec-reporter": "0.0.23",
+    "ng-mock-e2e": "^0.1.1",
     "nodemon": "^1.8.1",
     "phantomjs": "^1.9.19",
-    "protractor": "^3.0.0"
+    "protractor": "^3.0.0",
+    "protractor-http-mock": "^0.2.1"
   },
   "dependencies": {
     "morgan": "^1.6.1"
