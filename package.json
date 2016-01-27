@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/giamir/github-profiles.git",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "bower cache clean && bower install"
   },
   "author": "giamir",
   "license": "MIT",
