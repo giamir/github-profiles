@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giamir/github-profiles.git"
+    "url": "git+https://github.com/giamir/github-profiles.git",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "author": "giamir",
   "license": "MIT",
