@@ -6,12 +6,12 @@
   "scripts": {
     "start": "node app.js",
     "test": "karma start test/karma.conf.js",
-    "e2e": "protractor test/e2e/conf.js"
+    "e2e": "protractor test/e2e/conf.js",
+    "postinstall" : "./node_modules/bower/bin/bower install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giamir/github-profiles.git",
-    "postinstall": "bower cache clean && bower install"
+    "url": "git+https://github.com/giamir/github-profiles.git"
   },
   "author": "giamir",
   "license": "MIT",
