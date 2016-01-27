@@ -34,6 +34,7 @@
     "protractor-http-mock": "^0.2.1"
   },
   "dependencies": {
+    "bower": "^1.7.7",
     "morgan": "^1.6.1"
   }
 }
