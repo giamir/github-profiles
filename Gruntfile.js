@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    express: {
+      options: {
+          port:8080,
+          script: 'app.js'
+        },
+      run: {
+        }
+    },
     karma: {
       options: {
         configFile: './test/karma.conf.js'
@@ -25,13 +33,13 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-protractor-webdriver');
 
-  grunt.registerTask('test', ['karma', 'express', 'protractor_webdriver', 'protractor']);
+  grunt.registerTask('test', ['karma', 'e2e']);
   grunt.registerTask('unit', ['karma']);
-  grunt.registerTask('e2e', ['protractor_webdriver', 'protractor']);
+  grunt.registerTask('e2e', ['express', 'protractor_webdriver', 'protractor']);
 
 };
