@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "grunt test",
-    "postinstall": "bower install && ([ \"$NODE_ENV\" != production ] && ./node_modules/protractor/bin/webdriver-manager update --standalone --chrome)"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
