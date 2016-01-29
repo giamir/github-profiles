@@ -6,7 +6,8 @@ exports.config = {
   specs: ['githubProfileFeature.js'],
 
   jasmineNodeOpts: {
-    showColors: true
+    showColors: true,
+    print: function() {}
   },
 
   onPrepare: function() {
@@ -14,11 +15,7 @@ exports.config = {
       rootDirectory: __dirname, // default value: process.cwd()
       protractorConfig: 'conf.js' // default value: 'protractor.conf'
     };
-    var jasmineReporters = require('jasmine-reporters');
-    jasmine.getEnv().addReporter(new jasmineReporters.TerminalReporter({
-      verbosity: 3,
-      color: true,
-      showStack: true
-    }));
+    var SpecReporter = require('jasmine-spec-reporter');
+    jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
   }
 };
