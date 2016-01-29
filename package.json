@@ -9,8 +9,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "grunt test",
-    "postinstall": "./node_modules/bower/bin/bower install",
-    "postinstall": "./node_modules/protractor/bin/webdriver-manager update --standalone --chrome"
+    "postinstall": "bower install && ([ \"$NODE_ENV\" != production ] && ./node_modules/protractor/bin/webdriver-manager update --standalone --chrome)"
   },
   "repository": {
     "type": "git",
@@ -40,7 +39,8 @@
     "phantomjs": "^1.9.19",
     "protractor": "^3.0.0",
     "protractor-http-mock": "^0.2.1",
-    "selenium-standalone": "^4.8.0"
+    "selenium-standalone": "^4.8.0",
+    "webdriver-manager": "^8.0.0"
   },
   "dependencies": {
     "bower": "^1.7.7",
