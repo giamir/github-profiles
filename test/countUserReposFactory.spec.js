@@ -13,7 +13,7 @@ describe('factory: CountUserRepos', function() {
   beforeEach(inject(function($httpBackend) {
     httpBackend = $httpBackend;
     httpBackend
-      .expectGET("https://api.github.com/users/giamir/repos?access_token=2ad1a094fd15acc8d91ad4e773d1b3d768cadaa9&per_page=1000")
+      .expectGET("https://api.github.com/users/giamir/repos?access_token=3266211922b79b76a6e566d92a424270e6b5d0c0&per_page=1000")
       .respond(repos);
   }));
 
