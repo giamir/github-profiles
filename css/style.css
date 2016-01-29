@@ -1,0 +1,42 @@
+.avatar {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.details a{
+  margin-top: 10px;
+  display:block;
+  font-size: 18px;
+}
+
+.details ul{
+  padding: 0;
+}
+
+.details ul li{
+  border: 0;
+}
+
+.clearfix{
+  clear: left;
+}
+.user{
+  margin: 20px;
+}
+
+li.user, li.user ul li{
+  background: #ddd;
+}
+
+hr{
+  border: #333;
+}

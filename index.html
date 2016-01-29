@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Github user search</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -13,29 +14,39 @@
   <script src="js/countUserReposFactory.js"></script>
 </head>
 
-<body>
+<body ng-controller="GitUserSearchController as searchCtrl">
   <div class="container">
     <head class="page-header row">
       <h1 class="text-center">Github Profiles</h1>
     </head>
 
     <br>
-    <div class="col-md-6 col-md-offset-3" ng-controller="GitUserSearchController as searchCtrl">
-      <form class="form-horizontal text-center row" name="searchValueForm">
+    <div class="row">
+      <form class="col-md-6 col-md-offset-3 form-horizontal text-center" name="searchValueForm">
         <input type="text" placeholder="Github Username" ng-model="searchCtrl.searchTerm" ng-change="searchValueForm.$valid &amp;&amp; searchCtrl.getGithubData()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }" required>
         <button class="btn btn-primary" ng-click="searchCtrl.getGithubData()">Search</button>
       </form>
-      <h3 ng-show="searchCtrl.searchTerm">Last Search for {{searchCtrl.searchTerm}}</h3>
-
-      <br>
-      <ul class="list-group text-center">
-        <li ng-show="searchCtrl.searchTerm" ng-repeat="user in searchCtrl.githubUserData" class="list-group-item row">
-          <img ng-src="{{user.avatar_url}}&amp;s=50" class="pull-left" width="50" height="50">
-          <a ng-href="{{user.html_url}}" class="pull-right">{{user.login}}</a>
-          <p>{{user.repoCount}} repos</p>
-        </li>
-      </ul>
+      <h3 ng-show="searchCtrl.searchTerm" class="col-md-12 text-center">Last Search for {{searchCtrl.searchTerm}}</h3>
     </div>
+    <br>
+      <ul class="list-group row">
+        <div ng-show="searchCtrl.searchTerm" ng-repeat-start="user in searchCtrl.githubUserData" class="col-md-3 user-container">
+          <li class="list-group-item user">
+            <img ng-src="{{user.avatar_url}}&amp;s=100" width="100" height="100" class="avatar">
+            <div class="details">
+            <a class="text-center" ng-href="{{user.html_url}}">{{user.login}}</a>
+            <h5 class="text-center">{{user.repos.totalCount}} repos</h5>
+            <hr>
+            <ul ng-show="user.repos.languages">
+              <li ng-repeat="language in user.repos.languages" class="list-group-item">
+                {{language.name}} <span class="badge">{{language.repoCount}}</span>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <div class="clearfix" ng-if="$index%4==3"></div>
+        <div ng-repeat-end=""></div>
+      </ul>
   </div>
 </body>
 </html>

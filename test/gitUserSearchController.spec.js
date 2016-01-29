@@ -20,15 +20,35 @@ describe('GitUserSearchController', function() {
       ctrl.searchTerm = 'giamir';
       ctrl.getGithubData();
       scope.$digest();
-      expect(ctrl.githubUserData).toEqual([{ "login": "giamir", "repoCount": 1}]);
+      expect(ctrl.githubUserData).toEqual([{
+        "login": "giamir",
+        'repos': { 'totalCount':  10,
+                   'languages': [
+                     { 'name': 'Ruby', 'repoCount': 5 },
+                     { 'name': 'JavaScript', 'repoCount': 5 }
+                   ]
+                 }
+      }]);
     });
 
-    it("includes user repo count in user data", function() {
+    it("includes user repos count in user data", function() {
      ctrl.searchTerm = 'giamir';
      ctrl.getGithubData();
      scope.$digest();
-     expect(ctrl.githubUserData[0].repoCount).toEqual(1);
+     expect(ctrl.githubUserData[0].repos.totalCount).toEqual(10);
    });
+
+   it("includes user repos languages data statistic in user data", function() {
+      ctrl.searchTerm = 'giamir';
+      ctrl.getGithubData();
+      scope.$digest();
+      expect(ctrl.githubUserData[0].repos.languages).toEqual(
+        [
+          { 'name': 'Ruby', 'repoCount': 5 },
+          { 'name': 'JavaScript', 'repoCount': 5 }
+        ]
+      );
+    });
 
   });
 });

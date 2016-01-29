@@ -10,26 +10,6 @@ module.exports = [
     "incomplete_results": false,
     "items": [
       {
-        "login": "mikou90",
-        "id": 11386730,
-        "avatar_url": "https://avatars.githubusercontent.com/u/11386730?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/mikou90",
-        "html_url": "https://github.com/mikou90",
-        "followers_url": "https://api.github.com/users/mikou90/followers",
-        "following_url": "https://api.github.com/users/mikou90/following{/other_user}",
-        "gists_url": "https://api.github.com/users/mikou90/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/mikou90/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/mikou90/subscriptions",
-        "organizations_url": "https://api.github.com/users/mikou90/orgs",
-        "repos_url": "https://api.github.com/users/mikou90/repos",
-        "events_url": "https://api.github.com/users/mikou90/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/mikou90/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 37.12201
-      },
-      {
         "login": "giamir",
         "id": 6231616,
         "avatar_url": "https://avatars.githubusercontent.com/u/6231616?v=3",
@@ -48,6 +28,26 @@ module.exports = [
         "type": "User",
         "site_admin": false,
         "score": 28.585022
+      },
+      {
+        "login": "mikou90",
+        "id": 11386730,
+        "avatar_url": "https://avatars.githubusercontent.com/u/11386730?v=3",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mikou90",
+        "html_url": "https://github.com/mikou90",
+        "followers_url": "https://api.github.com/users/mikou90/followers",
+        "following_url": "https://api.github.com/users/mikou90/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mikou90/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mikou90/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mikou90/subscriptions",
+        "organizations_url": "https://api.github.com/users/mikou90/orgs",
+        "repos_url": "https://api.github.com/users/mikou90/repos",
+        "events_url": "https://api.github.com/users/mikou90/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mikou90/received_events",
+        "type": "User",
+        "site_admin": false,
+        "score": 37.12201
       },
       {
         "login": "giami",
@@ -79,7 +79,7 @@ module.exports = [
              method: 'GET'
            },
   response: {
-          data: [ { "language": "Ruby" }, { "language": "Javascript" } ]
+          data: [ { "language": "Ruby" }, { "language": "Ruby" }, { "language": "Javascript" } ]
             }
   },
   {
@@ -88,7 +88,7 @@ module.exports = [
                method: 'GET'
              },
     response: {
-            data: [ { "language": "Ruby" }, { "language": "Javascript" }, { "language": "Ruby" } ]
+            data: [ { "language": "Javascript" }, { "language": "Ruby" } ]
               }
     },
     {
