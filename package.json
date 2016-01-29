@@ -2,6 +2,9 @@
   "name": "github-profiles",
   "version": "1.0.0",
   "description": "Angular profiles for Github",
+  "engines": {
+    "node": "5.5.0"
+  },
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
