@@ -23,8 +23,16 @@ describe('GitHub profile finder', function() {
   it('finds profiles', function() {
     searchBox.sendKeys('giami');
     searchButton.click();
-    var profiles = element.all(by.repeater('user in searchCtrl.searchResult.items'));
+    var profiles = element.all(by.repeater('user in searchCtrl.githubUserData').column("user.login"));
     expect(profiles.getText()).toContain('giamir');
+  });
+
+  it('displays the number of repos belonging to the user', function() {
+    searchBox.sendKeys('giami');
+    searchButton.click();
+    var profiles = element.all(by.repeater('user in searchCtrl.githubUserData'))
+      .map(function (elm) {return elm.getText();});
+    profiles.then(function(res){ expect(res).toContain('giamir\n2 repos'); });
   });
 
 });

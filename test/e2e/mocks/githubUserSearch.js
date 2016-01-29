@@ -68,188 +68,36 @@ module.exports = [
         "type": "User",
         "site_admin": false,
         "score": 16.268324
-      },
-      {
-        "login": "giami2004",
-        "id": 5265717,
-        "avatar_url": "https://avatars.githubusercontent.com/u/5265717?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giami2004",
-        "html_url": "https://github.com/giami2004",
-        "followers_url": "https://api.github.com/users/giami2004/followers",
-        "following_url": "https://api.github.com/users/giami2004/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giami2004/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giami2004/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giami2004/subscriptions",
-        "organizations_url": "https://api.github.com/users/giami2004/orgs",
-        "repos_url": "https://api.github.com/users/giami2004/repos",
-        "events_url": "https://api.github.com/users/giami2004/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giami2004/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 8.932819
-      },
-      {
-        "login": "GiaMinh0305",
-        "id": 14047890,
-        "avatar_url": "https://avatars.githubusercontent.com/u/14047890?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/GiaMinh0305",
-        "html_url": "https://github.com/GiaMinh0305",
-        "followers_url": "https://api.github.com/users/GiaMinh0305/followers",
-        "following_url": "https://api.github.com/users/GiaMinh0305/following{/other_user}",
-        "gists_url": "https://api.github.com/users/GiaMinh0305/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/GiaMinh0305/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/GiaMinh0305/subscriptions",
-        "organizations_url": "https://api.github.com/users/GiaMinh0305/orgs",
-        "repos_url": "https://api.github.com/users/GiaMinh0305/repos",
-        "events_url": "https://api.github.com/users/GiaMinh0305/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/GiaMinh0305/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 7.1462555
-      },
-      {
-        "login": "giamix",
-        "id": 3502094,
-        "avatar_url": "https://avatars.githubusercontent.com/u/3502094?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giamix",
-        "html_url": "https://github.com/giamix",
-        "followers_url": "https://api.github.com/users/giamix/followers",
-        "following_url": "https://api.github.com/users/giamix/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giamix/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giamix/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giamix/subscriptions",
-        "organizations_url": "https://api.github.com/users/giamix/orgs",
-        "repos_url": "https://api.github.com/users/giamix/repos",
-        "events_url": "https://api.github.com/users/giamix/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giamix/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 7.1462555
-      },
-      {
-        "login": "giaminny",
-        "id": 156390,
-        "avatar_url": "https://avatars.githubusercontent.com/u/156390?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giaminny",
-        "html_url": "https://github.com/giaminny",
-        "followers_url": "https://api.github.com/users/giaminny/followers",
-        "following_url": "https://api.github.com/users/giaminny/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giaminny/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giaminny/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giaminny/subscriptions",
-        "organizations_url": "https://api.github.com/users/giaminny/orgs",
-        "repos_url": "https://api.github.com/users/giaminny/repos",
-        "events_url": "https://api.github.com/users/giaminny/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giaminny/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
-      },
-      {
-        "login": "giamia2051",
-        "id": 14065363,
-        "avatar_url": "https://avatars.githubusercontent.com/u/14065363?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giamia2051",
-        "html_url": "https://github.com/giamia2051",
-        "followers_url": "https://api.github.com/users/giamia2051/followers",
-        "following_url": "https://api.github.com/users/giamia2051/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giamia2051/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giamia2051/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giamia2051/subscriptions",
-        "organizations_url": "https://api.github.com/users/giamia2051/orgs",
-        "repos_url": "https://api.github.com/users/giamia2051/repos",
-        "events_url": "https://api.github.com/users/giamia2051/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giamia2051/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
-      },
-      {
-        "login": "giaminabaie",
-        "id": 14096721,
-        "avatar_url": "https://avatars.githubusercontent.com/u/14096721?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giaminabaie",
-        "html_url": "https://github.com/giaminabaie",
-        "followers_url": "https://api.github.com/users/giaminabaie/followers",
-        "following_url": "https://api.github.com/users/giaminabaie/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giaminabaie/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giaminabaie/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giaminabaie/subscriptions",
-        "organizations_url": "https://api.github.com/users/giaminabaie/orgs",
-        "repos_url": "https://api.github.com/users/giaminabaie/repos",
-        "events_url": "https://api.github.com/users/giaminabaie/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giaminabaie/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
-      },
-      {
-        "login": "giamiv",
-        "id": 15627180,
-        "avatar_url": "https://avatars.githubusercontent.com/u/15627180?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giamiv",
-        "html_url": "https://github.com/giamiv",
-        "followers_url": "https://api.github.com/users/giamiv/followers",
-        "following_url": "https://api.github.com/users/giamiv/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giamiv/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giamiv/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giamiv/subscriptions",
-        "organizations_url": "https://api.github.com/users/giamiv/orgs",
-        "repos_url": "https://api.github.com/users/giamiv/repos",
-        "events_url": "https://api.github.com/users/giamiv/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giamiv/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
-      },
-      {
-        "login": "GiaMinh",
-        "id": 7301524,
-        "avatar_url": "https://avatars.githubusercontent.com/u/7301524?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/GiaMinh",
-        "html_url": "https://github.com/GiaMinh",
-        "followers_url": "https://api.github.com/users/GiaMinh/followers",
-        "following_url": "https://api.github.com/users/GiaMinh/following{/other_user}",
-        "gists_url": "https://api.github.com/users/GiaMinh/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/GiaMinh/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/GiaMinh/subscriptions",
-        "organizations_url": "https://api.github.com/users/GiaMinh/orgs",
-        "repos_url": "https://api.github.com/users/GiaMinh/repos",
-        "events_url": "https://api.github.com/users/GiaMinh/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/GiaMinh/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
-      },
-      {
-        "login": "giamic",
-        "id": 11348317,
-        "avatar_url": "https://avatars.githubusercontent.com/u/11348317?v=3",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/giamic",
-        "html_url": "https://github.com/giamic",
-        "followers_url": "https://api.github.com/users/giamic/followers",
-        "following_url": "https://api.github.com/users/giamic/following{/other_user}",
-        "gists_url": "https://api.github.com/users/giamic/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/giamic/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/giamic/subscriptions",
-        "organizations_url": "https://api.github.com/users/giamic/orgs",
-        "repos_url": "https://api.github.com/users/giamic/repos",
-        "events_url": "https://api.github.com/users/giamic/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/giamic/received_events",
-        "type": "User",
-        "site_admin": false,
-        "score": 6.9950476
       }
     ]
     }
   }
-}];
+},
+{
+  request: {
+             path: 'https://api.github.com/users/giamir/repos',
+             method: 'GET'
+           },
+  response: {
+          data: [ { "language": "Ruby" }, { "language": "Javascript" } ]
+            }
+  },
+  {
+    request: {
+               path: 'https://api.github.com/users/mikou90/repos',
+               method: 'GET'
+             },
+    response: {
+            data: [ { "language": "Ruby" }, { "language": "Javascript" }, { "language": "Ruby" } ]
+              }
+    },
+    {
+      request: {
+                 path: 'https://api.github.com/users/giami/repos',
+                 method: 'GET'
+               },
+      response: {
+              data: [ { "language": "Ruby" }, { "language": "Javascript" } ]
+                }
+      }
+];

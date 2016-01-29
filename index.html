@@ -9,7 +9,8 @@
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="js/app.js"></script>
   <script src="js/gitUserSearchController.js"></script>
-  <script src="js/searchFactory.js"></script>
+  <script src="js/searchUserFactory.js"></script>
+  <script src="js/countUserReposFactory.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,17 @@
     <br>
     <div class="col-md-6 col-md-offset-3" ng-controller="GitUserSearchController as searchCtrl">
       <form class="form-horizontal text-center row" name="searchValueForm">
-        <input type="text" placeholder="Github Username" ng-model="searchCtrl.searchTerm" ng-change="searchValueForm.$valid &amp;&amp; searchCtrl.doSearch()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }" required>
-        <button class="btn btn-primary" ng-click="searchCtrl.doSearch()">Search</button>
+        <input type="text" placeholder="Github Username" ng-model="searchCtrl.searchTerm" ng-change="searchValueForm.$valid &amp;&amp; searchCtrl.getGithubData()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }" required>
+        <button class="btn btn-primary" ng-click="searchCtrl.getGithubData()">Search</button>
       </form>
       <h3 ng-show="searchCtrl.searchTerm">Last Search for {{searchCtrl.searchTerm}}</h3>
 
       <br>
       <ul class="list-group text-center">
-        <li ng-show="searchCtrl.searchTerm" ng-repeat="user in searchCtrl.searchResult.items" class="list-group-item row">
+        <li ng-show="searchCtrl.searchTerm" ng-repeat="user in searchCtrl.githubUserData" class="list-group-item row">
           <img ng-src="{{user.avatar_url}}&amp;s=50" class="pull-left" width="50" height="50">
           <a ng-href="{{user.html_url}}" class="pull-right">{{user.login}}</a>
+          <p>{{user.repoCount}} repos</p>
         </li>
       </ul>
     </div>

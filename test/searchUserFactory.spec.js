@@ -1,10 +1,10 @@
-describe('factory: Search', function() {
+describe('factory: SearchUser', function() {
   beforeEach(module('GitUserSearch'));
 
   var search;
 
-  beforeEach(inject(function(Search) {
-    search = Search;
+  beforeEach(inject(function(SearchUser) {
+    search = SearchUser;
   }));
 
   var items = [
@@ -25,7 +25,7 @@ describe('factory: Search', function() {
   beforeEach(inject(function($httpBackend) {
     httpBackend = $httpBackend;
     httpBackend
-      .expectGET("https://api.github.com/search/users?access_token=973539a4af62ea4ac44efa8c78c510dc01632d75&q=hello")
+      .expectGET("https://api.github.com/search/users?access_token=3266211922b79b76a6e566d92a424270e6b5d0c0&q=hello")
       .respond(
         { items: items }
       );

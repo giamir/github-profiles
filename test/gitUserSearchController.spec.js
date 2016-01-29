@@ -2,7 +2,7 @@ describe('GitUserSearchController', function() {
   var ctrl;
   var scope;
 
-  beforeEach(module('GitUserSearch', 'searchFactoryMock'));
+  beforeEach(module('GitUserSearch', 'searchFactoryMock', 'countUserReposMock'));
 
   beforeEach(inject(function($controller, $rootScope) {
     ctrl = $controller('GitUserSearchController');
@@ -10,18 +10,25 @@ describe('GitUserSearchController', function() {
   }));
 
   it('initializes with an empty search result and term', function() {
-    expect(ctrl.searchResult).toBeUndefined();
+    expect(ctrl.githubUserData).toBeUndefined();
     expect(ctrl.searchTerm).toBeUndefined();
-    expect(ctrl.lastSearchTerm).toBeUndefined();
   });
 
   describe('when searching for a user', function() {
 
     it('displays search results', function() {
-      ctrl.searchTerm = 'hello';
-      ctrl.doSearch();
+      ctrl.searchTerm = 'giamir';
+      ctrl.getGithubData();
       scope.$digest();
-      expect(ctrl.searchResult.items).toEqual('cat');
+      expect(ctrl.githubUserData).toEqual([{ "login": "giamir", "repoCount": 1}]);
     });
+
+    it("includes user repo count in user data", function() {
+     ctrl.searchTerm = 'giamir';
+     ctrl.getGithubData();
+     scope.$digest();
+     expect(ctrl.githubUserData[0].repoCount).toEqual(1);
+   });
+
   });
 });
